@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>accordion</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="./JS/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+  <ul class="accordion">
+    <li>
+      <p class="ac1">アコーディオンメニュー１</p>
+      <ul class="inner">
+        <li class="content1-1">コンテンツ１</li>
+        <li class="content1-2">コンテンツ２</li>
+        <li class="content1-3">コンテンツ３</li>
+      </ul>
+    </li>
+    <li>
+      <p class="ac2">アコーディオンメニュー２</p>
+      <ul class="inner">
+        <li class="content2-1">コンテンツ１</li>
+        <li class="content2-2">コンテンツ２</li>
+        <li class="content2-3">コンテンツ３</li>
+      </ul>
+    </li>
+    <li>
+      <p class="ac3">アコーディオンメニュー３</p>
+      <ul class="inner">
+        <li class="content3-1">コンテンツ１</li>
+        <li class="content3-2">コンテンツ２</li>
+        <li class="content3-3">コンテンツ３</li>
+      </ul>
+    </li>
+  </ul>
+  <script>
+	$('.accordion p').click(function(){
+		$(this).next('ul').slideToggle();
+	});
+;
+  
+  </script>
+</body>
+</html>
